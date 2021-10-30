@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Commenting Chrome Extension</title>
+	<link rel="stylesheet" href="./css/style.css" />
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark text-white">
+	  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+		  <label class="btn btn-outline-success active">
+		    <input type="radio" name="options" id="option1" autocomplete="off" value="paraphrase" checked> Paraphrase
+		  </label>
+		  <label class="btn btn-outline-success">
+		    <input type="radio" name="options" id="option2" autocomplete="off" value="summarize"> Summarize
+		  </label>
+		</div>
+		<label>
+	    <span>Strength :</span>
+		  <input id="rate" type="range" class="ctrl" min=0 max=3 step=1 value=1></input>
+	  </label>
+	</nav>
+	<div class="card">
+	  <div class="card-body">
+	    <div class="input-group">
+			  <textarea id="content" class="form-control" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." maxlength=400 rows=16></textarea>
+			  <textarea id="result" class="form-control"></textarea>
+			</div>
+	  </div>
+	  <div class="card-footer text-muted d-flex justify-content-between">
+	    <span id="charlen"> 0/400 Characters </span>
+	    <button type="button" class="btn btn-info" id="submit">Paraphrase</button>
+	    <a href=""> Leave Feedback </a>
+	  </div>
+	</div>
+	<script src="./js/popup.js" type="text/javascript"></script>
+</body>
+</html>

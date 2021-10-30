@@ -1,0 +1,22 @@
+{
+  "name": "Commenting Extension",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "commenting.html",
+    "default_icon": "logo.png"
+  },
+  "permissions": [
+      "tabs"
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+F",
+        "mac": "MacCtrl+Shift+F"
+      },
+      "description": "Help with Commenting."
+    }
+  }
+}
